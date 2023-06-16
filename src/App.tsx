@@ -1,5 +1,6 @@
 import Aos from 'aos'
 import { useEffect } from 'react';
+import RouteComponent from './routes/route';
 
 const App = () => {
 
@@ -8,11 +9,8 @@ const App = () => {
     Aos.refresh()
   }, [])
 
-  return (
-    <>
-      <p className="text-primary">McLearnms</p>
-    </>
-  )
+  return <RouteComponent />
+  
 }
 
 export default App

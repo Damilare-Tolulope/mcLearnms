@@ -1,30 +1,25 @@
-import { Suspense, lazy } from 'react';
-import { BounceLoader } from 'react-spinners';
+import { Routes, Route } from "react-router-dom"
+import { publicRoutes } from "./index"
+import Layout from "../layouts/Layout"
 
-const load = (Component: React.FC) => (props: object) =>
-(
-  <Suspense
-    fallback={
-      <div className="w-[100%] my-[20%] flex justify-center items-center">
-        <BounceLoader loading color="#0052CC" />
-      </div>
-    }
-  >
-    <Component {...props} />
-  </Suspense>
-);
+const RouteComponent = () => {
+  return (
+    <>
+        <Routes>
+            {
+                publicRoutes.map(({path, component: Component}) => (
+                    <Route path={path} element={
+                        <Layout>
+                            <Component />
+                        </Layout>
+                    } />
+                ))
+            }
 
-interface routeInterface {
-    path: string;
-    component: React.FC;
-  }
+            {/* <Route path="*" element={<PageNotFound />} /> */}
+        </Routes>
+    </>
+  )
+}
 
-const Home = load(lazy(() => import('pages/Home')));
-
-
-const publicRoutes: routeInterface[] = [
-    { path: '/', component: Home },
-  ];
-
-
-export { publicRoutes };
+export default RouteComponent
