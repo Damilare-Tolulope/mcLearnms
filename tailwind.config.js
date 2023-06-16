@@ -8,7 +8,10 @@ export default {
         "secondary": "#060C3C",  
         "dark": "#000D22",  
         "neutral": "#44484F",  
-      }
+      },
+      maxWidth: {
+        full: '1440px',
+      },
     },
   },
   plugins: [],

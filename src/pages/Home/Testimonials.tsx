@@ -1,7 +1,13 @@
+import Heading from "../../components/Heading"
 
 const Testimonials = () => {
   return (
-    <div>Testimonials</div>
+    <div>
+      <Heading 
+        preText="Testimonials"
+        headText="See how we are making a difference"
+      />
+    </div>
   )
 }
 

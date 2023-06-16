@@ -1,6 +1,14 @@
+import Heading from "../../components/Heading"
+
+
 const Faq = () => {
   return (
-    <div>Faq</div>
+    <div>
+      <Heading 
+        preText="FAQ’s"
+        headText="Frequently asked questions"
+      />
+    </div>
   )
 }
 
