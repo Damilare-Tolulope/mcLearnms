@@ -1,3 +1,4 @@
+import Layout from "layouts/Layout"
 import { Routes, Route } from "react-router-dom"
 import { publicRoutes } from "./route"
 
@@ -8,7 +9,9 @@ const Index = () => {
             {
                 publicRoutes.map(({path, component: Component}) => (
                     <Route path={path} element={
-                        <Component />
+                        <Layout>
+                            <Component />
+                        </Layout>
                     } />
                 ))
             }
