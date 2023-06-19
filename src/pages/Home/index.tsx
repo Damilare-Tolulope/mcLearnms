@@ -3,6 +3,8 @@ import Faq from "./Faq"
 import Hero from "./Hero"
 import Services from "./Services"
 import Testimonials from "./Testimonials"
+import withScrollToTop from "../../components/WithScrollToTop"
+
 
 const Index = () => {
   return (
@@ -16,4 +18,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default withScrollToTop(Index)

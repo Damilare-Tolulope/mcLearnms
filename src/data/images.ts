@@ -20,7 +20,9 @@ import play from '../assets/icons/play.svg'
 import orangebook from '../assets/icons/orangebook.svg'
 import bluebook from '../assets/icons/bluebook.svg'
 import caretDown from '../assets/icons/caret-down.svg'
+import caretRight from '../assets/icons/caret-right.svg'
 import menu from '../assets/icons/menu.svg'
+import quote from '../assets/icons/quote.svg'
 
 export {
     whiteLogo,
@@ -41,5 +43,7 @@ export {
     orangebook,
     bluebook,
     caretDown,
+    caretRight,
     menu,
+    quote,
 }

@@ -3,9 +3,42 @@
   src: url("./assets/fonts/DroidSans.ttf")
 }
 
+[data-aos]{
+  pointer-events: none;
+}
+.aos-animate {
+  pointer-events: auto;
+}
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "DroidSans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.app{
+  overflow: hidden;
+}
+
+.accordion-close {
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.accordion-show {
+	height: 100%;
+	overflow: 9999px;
+	transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+@media screen and (min-width: 400px) {
+  .swiper-container{
+    width: 370px;
+  }
 }

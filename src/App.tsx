@@ -5,11 +5,11 @@ import RouteComponent from './routes/route';
 const App = () => {
 
   useEffect(() => {
-    Aos.init({ duration: 1500, once: true });
+    Aos.init({ duration: 1500 });
     Aos.refresh()
   }, [])
 
-  return <RouteComponent />
+  return <div className="app"> <RouteComponent /> </div>
   
 }
 
