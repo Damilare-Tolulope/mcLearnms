@@ -16,7 +16,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="md:px-20 px-10 max-w-full mx-auto w-full">
+    <div className="md:px-20 px-5 max-w-full mx-auto w-full">
       <Heading 
         preText="FAQ’s"
         headText="Frequently asked questions"
@@ -36,30 +36,30 @@ const Faq = () => {
                   </div>
               </div>
           ))}
-      <button className="mt-5 text-primary cursor-pointer">Learn more &rsaquo;</button>
+      <button className="text-primary cursor-pointer">Learn more &rsaquo;</button>
       </div>
 
-      <div className="relative">
+      <div className="relative mt-10">
         <Heading 
           headText="Beat the competition with Seamless Online Learning - Join the League of Leading Institutions Today!"
         />
         <p data-aos='fade-up' className="text-secondary text-base md:text-xl mt-5 mb-14 text-center">Sign up now and experience a new level of education</p>
         <div data-aos='fade-up' className="w-full text-center mx-auto">
-          <Button>Get Started now, it’s free!</Button>
+          <Button className="relative z-10">Get Started now, it’s free!</Button>
         </div>
-        <img src={rev} className="absolute right-0 -bottom-28 z-0" alt="mcLearnms" />
+        <img src={rev} className="absolute right-0 -bottom-28 z-0 w-4/5 md:w-1/2 lg:w-auto" alt="mcLearnms" />
       </div>
     </div>
   )
 }
 
 const styles = {
-  accordion: "accordion bg-transparent mt-20",
+  accordion: "accordion bg-transparent md:mt-20",
   accordionItem: "accordion-item my-5 md:py-0 py-3 ",
-  accordionContainer: "accordion-title px-5 accordion-button rounded-full cursor-pointer relative flex gap-4 items-center md:py-4 py-1 text-left border-0 transition outline-none focus:outline-none",
+  accordionContainer: "accordion-title md:px-5 accordion-button rounded-full cursor-pointer relative flex gap-4 items-center md:py-4 py-1 text-left border-0 transition outline-none focus:outline-none",
   accordionTitle: "md:text-md text-sm font-bold",
-  accordionIcon: "accordion-icon md:text-md text-sm font-bold",
-  accordionBody: "accordion-body p-5 mt-5 border rounded-xl border-1 border-[#D4DFF1]",
+  accordionIcon: "accordion-icon md:text-md text-sm font-bold transition duration-300 linear",
+  accordionBody: "accordion-body p-5 mt-5 border rounded-xl border-1 border-[#D4DFF1] transition duration-300 linear",
 }
 
 export default Faq

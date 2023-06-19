@@ -42,3 +42,12 @@
     width: 370px;
   }
 }
+
+#header {
+  transition: all linear 0.3s;
+  margin-top: -100%;
+}
+#header-show {
+  margin-top: 0;
+  transition: all linear 0.3s;
+}

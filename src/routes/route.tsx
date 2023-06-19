@@ -8,7 +8,7 @@ const RouteComponent = () => {
         <Routes>
             {
                 publicRoutes.map(({path, component: Component}) => (
-                    <Route path={path} element={
+                    <Route key={path} path={path} element={
                         <Layout>
                             <Component />
                         </Layout>

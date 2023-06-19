@@ -25,8 +25,8 @@ return (
 }
 
 const styles = {
-    btn: "bg-primary text-white font-bold px-16 py-3 rounded-lg cursor-pointer transition linear duration-300 hover:scale-105",
-    secBtn: "text-primary font-bold px-10 py-1 rounded-lg cursor-pointer border border-2 border-transparent transition linear duration-300 hover:border-primary",
+    btn: "bg-primary text-white text-sm md:text-base font-bold md:px-16 px-8 py-3 rounded-lg cursor-pointer transition linear duration-300 hover:scale-105",
+    secBtn: "text-primary text-sm md:text-base font-bold md:px-10 px-3 py-1 rounded-lg cursor-pointer border border-2 border-transparent transition linear duration-300 hover:border-primary",
 }
 
 export default Button

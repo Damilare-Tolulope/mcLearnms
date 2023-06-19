@@ -8,17 +8,17 @@ import { quote } from "../../data/images";
 const Testimonials = () => {
   return (
     <div className="bg-white py-20">
-      <div className="md:px-20 px-10 max-w-full mx-auto w-full">
+      <div className="md:px-20 px-5 max-w-full mx-auto w-full">
         <Heading 
           preText="Testimonials"
           headText="See how we are making a difference"
         />
 
-        <div className="mt-10 relative p-10 ">
-          <img className='ml-40' src={quote} alt="quote" />
+        <div className="md:mt-10 relative p-10">
+          <img className='ml-40 mb-5' src={quote} alt="quote" />
           <Carousel>
           {
-            testimonials.map(({ testimony, user, role }) => <SwiperSlide key={testimony}>
+            testimonials.map(({ testimony, user, role }, index) => <SwiperSlide key={index}>
               <div className='text-center p-5 bg-white pb-20 h-full drop-shadow-xl w-4/5 mx-auto border border-3'>
                 <p className="">{testimony}</p>
                 <h4 className="text-neutral mt-5 mb-2">{user}</h4>
