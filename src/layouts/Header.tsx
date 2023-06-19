@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { navLinks } from "../data";
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
@@ -13,13 +13,18 @@ const Header = () => {
         setIsShown(!isShown)
 
         if(isShown){
-            document.getElementById('header')!.style.marginTop = "-100%";
-            document.getElementById('header')!.style.marginBottom = "0%";
-        } else{
             document.getElementById('header')!.style.marginTop = "0%";  
             document.getElementById('header')!.style.marginBottom = "80%";
+        } else{
+            document.getElementById('header')!.style.marginTop = "-150%";
+            document.getElementById('header')!.style.marginBottom = "0%";
         }
     }
+    
+    useEffect(() => {
+        document.getElementById('header')!.style.marginTop = "-150%";
+        document.getElementById('header')!.style.marginBottom = "0%";
+    }, [])
 
     return (
         <header className="w-full bg-[#D4DFF11A] py-5 pb-10 lg:pb-5 fixed filter backdrop-blur-xl z-50">
