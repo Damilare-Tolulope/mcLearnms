@@ -49,8 +49,8 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <hr className="my-10 border-b border-[#D4DFF1]" />
-                <p className="text-center text-sm md:text-base mt-2 text-[#D4DFF1]">© 2023 Mclearnms. All Right Reserved</p>
+                <hr className="mt-10 border-b border-[#D4DFF1]" />
+                <p className="text-center text-sm md:text-base mt-3 text-[#D4DFF1]">© 2023 Mclearnms. All Right Reserved</p>
             </div>
         </footer>
     );

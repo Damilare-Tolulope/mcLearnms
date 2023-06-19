@@ -14,12 +14,12 @@ const Testimonials = () => {
           headText="See how we are making a difference"
         />
 
-        <div className="md:mt-10 relative p-10">
+        <div className="md:mt-10 relative md:p-10">
           <img className='ml-40 mb-5' src={quote} alt="quote" />
           <Carousel>
           {
-            testimonials.map(({ testimony, user, role }, index) => <SwiperSlide key={index}>
-              <div className='text-center p-5 bg-white pb-20 h-full drop-shadow-xl w-4/5 mx-auto border border-3'>
+            testimonials.map(({ testimony, user, role }, index) => <SwiperSlide key={index} className="py-10 pb-20">
+              <div className='text-center text-sm md:text-base p-5 bg-white md:h-60 h-80 drop-shadow-xl w-4/5 mx-auto border border-3'>
                 <p className="">{testimony}</p>
                 <h4 className="text-neutral mt-5 mb-2">{user}</h4>
                 <p className="text-dark font-bold">{role}</p>

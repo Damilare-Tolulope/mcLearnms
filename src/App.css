@@ -45,9 +45,14 @@
 
 #header {
   transition: all linear 0.3s;
-  margin-top: -100%;
 }
-#header-show {
-  margin-top: 0;
-  transition: all linear 0.3s;
+
+.swiper [class^="swiper-button-"]{
+  width: 50%;
+  top: initial;
+  bottom: 0;
+}
+
+.swiper [class^="swiper-button-"]::after {
+  font-size: 30px;
 }
